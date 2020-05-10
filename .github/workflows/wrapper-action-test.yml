@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test-action
+      id: test-action
       uses: SvanBoxel/parameterizable-docker-action-example@58a0f28
       with: 
         alpine-version: 3.6
