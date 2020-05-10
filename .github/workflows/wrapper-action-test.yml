@@ -1,7 +1,6 @@
 name: test wrapper action
 on:
   push:
-    branches: [ master ]
 
 jobs:
   build:
