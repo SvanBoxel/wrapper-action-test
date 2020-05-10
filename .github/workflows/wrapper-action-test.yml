@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test-action
-      uses: SvanBoxel/parameterizable-docker-action-example@5c05e50
+      uses: SvanBoxel/parameterizable-docker-action-example@58a0f28
       with: 
         alpine-version: 3.6
 
     - name: validate output
-      run: ${{steps.test-action.outputs.version}}
+      run: echo ${{steps.test-action.outputs.version}}
