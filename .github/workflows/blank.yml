@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test-action
+      uses: JavierZolotarchuk@v1
+      with: 
+        alpine-version: 3.6
+
+    - name: Run a one-line script
+      run: ${{steps.test-action.outputs.version}}
