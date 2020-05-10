@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test-action
-      uses: JavierZolotarchuk/parameterizable-docker-action-example@v1
+      uses: SvanBoxel/parameterizable-docker-action-example@v1
       with: 
         alpine-version: 3.6
 
