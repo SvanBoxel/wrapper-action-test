@@ -1,4 +1,4 @@
-name: CI
+name: test wrapper action
 on:
   push:
     branches: [ master ]
@@ -12,5 +12,5 @@ jobs:
       with: 
         alpine-version: 3.6
 
-    - name: Run a one-line script
+    - name: validate output
       run: ${{steps.test-action.outputs.version}}
